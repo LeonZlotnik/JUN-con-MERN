@@ -4,12 +4,22 @@ import './App.css';
 import NavBar from './components/NavBar';
 import FirstForm from './components/FirstForm';
 
+import {Switch, Route} from 'react-router-dom';
+
+import Index from './components/Index'
+
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <NavBar/>
-        <FirstForm/>
+
+        <Switch>
+          <Route exact path='/' component={Index} />
+          <Route path='/' component={Index} />
+        </Switch>
+
       </div>
     );
   }

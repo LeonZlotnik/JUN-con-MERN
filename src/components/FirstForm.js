@@ -4,7 +4,7 @@ import Bulma from 'bulma';
 function FirstForm(){
     return (
 
-        <form action >    
+        <form action className="container is-fluid" >    
           <table width={680} border={0} cellSpacing={0}>
             <tbody>
               <tr>
