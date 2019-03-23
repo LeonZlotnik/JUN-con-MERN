@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
-import FirstForm from './components/FirstForm';
 
 import {Switch, Route} from 'react-router-dom';
 
-import Index from './components/Index'
+import Index from './components/Index';
+import Menu from './components/Menu';
+import Results from './components/Results';
 
 
 class App extends Component {
@@ -17,7 +18,8 @@ class App extends Component {
 
         <Switch>
           <Route exact path='/' component={Index} />
-          <Route path='/' component={Index} />
+          <Route exact path='/menu' component={Menu} />
+          <Route exact path='/results' component={Results}/>
         </Switch>
 
       </div>

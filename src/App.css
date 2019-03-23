@@ -23,6 +23,52 @@
   color: #61dafb;
 }
 
+#Tips-section {
+  display: flex;
+  height: 200px;
+  width: 70%;
+  margin: 3% 12%;
+}
+
+.show {
+  display: inherit;
+}
+
+.card {
+  margin: 2%;
+}
+
+.btn {
+  width: 70%;
+  height: 80px;
+  line-height: 70px;
+  background-color: #3275C9;
+  color: white;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  margin: 3%;
+}
+
+#Program-Browser {
+  width: 70%;
+  height: 80px;
+  line-height: 70px;
+  background-color: #3275C9;
+  color: white;
+  position: absolute; top: 80%; left: 10%;
+  margin: 3%;
+  overflow: inherit
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,0 +1,43 @@
+[
+	{
+		"nombre": {
+			"common": "100Mexicanos",
+			"official": "100mexicanosdijeron"
+            },
+            
+            "origen": { 
+                "pais": "Mexico",
+                "idioma": "Español"
+
+            },
+
+            "categoria": { 
+                "principal": "Concurso",
+                "secundaria": "Conocimiento",
+                "terciario": "Comedia",
+                "genero": {
+                    "clasificacion": "familiar",
+                    "edad-minima": "8"
+                }
+
+            },
+
+            "programacion": { 
+                "duracion-n-minutos": "45",
+                "publicacion": "semanal"
+
+            },
+
+            "logo": { 
+                "principal": "",
+                "adicionales": {
+                    "miniatura": "",
+                    "secunaria": "",
+                    "secundaria-min": ""
+                }
+
+            }
+
+        }
+        
+    ]
