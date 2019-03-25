@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
 import Bulma from 'bulma'
+import programas from '../programas.json';
 
 class MenuOptions extends Component{
-
-    state = {
-
-    }
 
     popUpFunction = () => {
         const popup =  document.getElementById("Program-Browser");
@@ -31,11 +28,46 @@ class MenuOptions extends Component{
                     <button onClick={this.deleteModal} className="delete" aria-label="close" />
                     </header>
                     <section className="modal-card-body">
-                    {/* Content ... */}
+                    <h2><strong>Seleccione los campos siguiente</strong></h2>
+                        <p>A traves de estos campos es que podrá acceder a todos los contenidos que nuetros partenrs has subido!</p>
+                        <br/>
+                        <p>No es necesario que llene todos los campos. Entre más campos llene más especófoca será la consulta.</p>
+                    <label>País</label>
+                    <select>
+                        {programas.map((contenido,index) => {
+                            return(
+                                <option value="" key={index}>{contenido.origen.pais}</option>
+                            )
+                        })}
+                    </select>
+                    <label>Idioma</label>
+                    <select>
+                        {programas.map((contenido,index) => {
+                            return(
+                                <option value="" key={index}>{contenido.origen.idioma}</option>
+                            )
+                        })}
+                    </select>
+                    <label>Categoría</label>
+                    <select>
+                        {programas.map((contenido,index) => {
+                            return(
+                                <option value="" key={index}>{contenido.categoria.principal}</option>
+                            )
+                        })}
+                    </select>
+                    <label>Subcategoría</label>
+                    <select>
+                        {programas.map((contenido,index) => {
+                            return(
+                                <option value="" key={index}>{contenido.categoria.secundaria}</option>
+                            )
+                        })}
+                    </select>
                     </section>
                     <footer className="modal-card-foot">
-                    <button className="button is-success">Save changes</button>
-                    <button className="button">Cancel</button>
+                    <button className="button is-success" submit="">Save changes</button>  {/* Metodo GET*/} 
+                    <button className="button" onClick={this.deleteModal}>Cancel</button>
                     </footer>
                 </div>
             </div>

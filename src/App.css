@@ -50,16 +50,7 @@
   margin: 3%;
 }
 
-#Program-Browser {
-  width: 70%;
-  height: 80px;
-  line-height: 70px;
-  background-color: #3275C9;
-  color: white;
-  position: absolute; top: 80%; left: 10%;
-  margin: 3%;
-  overflow: inherit
-}
+
 
 .hide {
   display: none;
@@ -67,6 +58,26 @@
 
 .show {
   display: block;
+}
+
+.result-box {
+  width: 80%;
+  height: 600px;
+  overflow: hidden;
+  background-color:white;
+  margin: 2% 10%;
+  border-radius: 2%; 
+}
+
+.program-box {
+  width:120px; 
+  height:90px; 
+  margin:3% 1.1%; 
+  padding: 0; 
+  float:left; 
+  border-radius: 10px ;
+  border: solid 3px #DC1289;
+  background-color: white;
 }
 
 @keyframes App-logo-spin {

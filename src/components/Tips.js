@@ -52,14 +52,14 @@ class Tips extends Component {
         <div className="card is-two-fifths">
         <div className="card-image">
         <figure className="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+            <img src="https://yt3.ggpht.com/a-/AAuE7mCfM8VUpqw_Ptodz7stpbc9mbrO1sbTa6obiA=s900-mo-c-c0xffffffff-rj-k-no" alt="Placeholder image" />
         </figure>
         </div>
         <div className="card-content">
         <div className="media">
             <div className="media-left">
             <figure className="image is-48x48">
-                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+                <img src="https://yt3.ggpht.com/a-/AAuE7mCfM8VUpqw_Ptodz7stpbc9mbrO1sbTa6obiA=s900-mo-c-c0xffffffff-rj-k-no" alt="Placeholder image" />
             </figure>
             </div>
             <div className="media-content">
@@ -80,14 +80,14 @@ class Tips extends Component {
         <div className="card is-two-fifths">
         <div className="card-image">
         <figure className="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+            <img src="http://nfl.com/static/content/public/static/scripts/network/assets/redzone/redzone2018_600x600.jpg" alt="Placeholder image" />
         </figure>
         </div>
         <div className="card-content">
         <div className="media">
             <div className="media-left">
             <figure className="image is-48x48">
-                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+                <img src="http://nfl.com/static/content/public/static/scripts/network/assets/redzone/redzone2018_600x600.jpg" alt="Placeholder image" />
             </figure>
             </div>
             <div className="media-content">
