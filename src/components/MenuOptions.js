@@ -33,34 +33,34 @@ class MenuOptions extends Component{
                         <br/>
                         <p>No es necesario que llene todos los campos. Entre más campos llene más especófoca será la consulta.</p>
                     <label>País</label>
-                    <select>
+                    <select className="select is-rounded">
                         {programas.map((contenido,index) => {
                             return(
-                                <option value="" key={index}>{contenido.origen.pais}</option>
+                                <option value="" key={index}>{contenido.media.contenidos.origen.pais}</option>
                             )
                         })}
-                    </select>
+                    </select >
                     <label>Idioma</label>
-                    <select>
+                    <select className="select is-rounded">
                         {programas.map((contenido,index) => {
                             return(
-                                <option value="" key={index}>{contenido.origen.idioma}</option>
+                                <option value="" key={index}>{contenido.media.contenidos.origen.idioma}</option>
                             )
                         })}
                     </select>
                     <label>Categoría</label>
-                    <select>
+                    <select className="select is-rounded">
                         {programas.map((contenido,index) => {
                             return(
-                                <option value="" key={index}>{contenido.categoria.principal}</option>
+                                <option value="" key={index}>{contenido.media.contenidos.categoria.principal}</option>
                             )
                         })}
                     </select>
                     <label>Subcategoría</label>
-                    <select>
+                    <select className="select is-rounded">
                         {programas.map((contenido,index) => {
                             return(
-                                <option value="" key={index}>{contenido.categoria.secundaria}</option>
+                                <option value="" key={index}>{contenido.media.contenidos.categoria.secundaria}</option>
                             )
                         })}
                     </select>
