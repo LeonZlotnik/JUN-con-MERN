@@ -11,8 +11,8 @@ class MainBar extends Component {
 
         <ul id="mainbar-ul">
             <li className="help"><a href=""><img src=""/></a></li>
-            <Link to="/index">
-            <li className="Login">Login</li>
+            <Link to="/menu">
+            <li className="Login">Menu</li>
             </Link>
             <Link to="/profile">
             <li className="profile">Profile</li>

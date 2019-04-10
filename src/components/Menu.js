@@ -12,7 +12,7 @@ class Menu extends Component {
       <Fragment>
         <MainBar/>
         <Tips/>
-        <MenuOptions/>
+        <MenuOptions funcion={this.props.funcion} filtro={this.props.filtro} />
      </Fragment>
   );
 }

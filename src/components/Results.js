@@ -9,7 +9,7 @@ class Results extends Component {
     render(){
         return(
             <div className="results">
-                <ResultBox/>
+                <ResultBox programas={this.props.programas}/>
             </div>
         )
     }

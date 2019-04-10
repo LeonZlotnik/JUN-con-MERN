@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FirstForm from './FirstForm';
+import FirstForm from '../components/FirstForm';
 import NavBar from '../components/NavBar';
 
 

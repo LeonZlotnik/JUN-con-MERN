@@ -2,7 +2,16 @@ import React, { Component } from 'react'
 import Bulma from 'bulma'
 import programas from '../programas.json';
 
+import { Link } from 'react-router-dom';
+
 class MenuOptions extends Component{
+
+    state = {
+        pais: "",
+        idioma: "",
+        categoria: "",
+        subcategoria: ""
+    }
 
     popUpFunction = () => {
         const popup =  document.getElementById("Program-Browser");
@@ -11,11 +20,43 @@ class MenuOptions extends Component{
 
     deleteModal = () => {
         const popup =  document.getElementById("Program-Browser");
-        popup.style.display = 'none'
+        popup.style.display = 'none';
+    }
+
+    savePais = (e) => {
+        this.setState({
+            pais: e.target.value
+        })
+    }
+
+    saveIdioma = (e) => {
+        this.setState({
+            idioma: e.target.value
+        })
+    }
+
+    saveCategoria = (e) => {
+        this.setState({
+            categoria: e.target.value
+        })
+        
+    }
+
+    saveSubcategoria = (e) => {
+        this.setState({
+            subcategoria: e.target.value
+        })
+    }
+
+    submit = () => {
+        this.props.funcion(this.state)
     }
 
     render(){
-    return(
+        
+        
+        
+    return( 
         <section>
             
             <button className='btn' onClick={this.popUpFunction}>Browse Programs</button>
@@ -33,40 +74,47 @@ class MenuOptions extends Component{
                         <br/>
                         <p>No es necesario que llene todos los campos. Entre más campos llene más especófoca será la consulta.</p>
                     <label>País</label>
-                    <select className="select is-rounded">
+                    <select className="select is-rounded" onChange={(e)=> this.savePais(e)}>
+                                <option disabled selected>Seleccione el pais</option>  
                         {programas.map((contenido,index) => {
                             return(
-                                <option value="" key={index}>{contenido.media.contenidos.origen.pais}</option>
-                            )
+                                //<option value={contenido.media.contenidos.origen.pais} key={index}>{contenido.media.contenidos.origen.pais}</option>
+                                <option value={contenido.media.contenidos.origen.pais} key={index}>{contenido.media.contenidos.origen.pais}</option>
+                                )
                         })}
                     </select >
                     <label>Idioma</label>
-                    <select className="select is-rounded">
+                    <select className="select is-rounded" onChange={(e)=> this.saveIdioma(e)}>
+                                <option disabled selected>Seleccione el idioma</option>   
                         {programas.map((contenido,index) => {
                             return(
-                                <option value="" key={index}>{contenido.media.contenidos.origen.idioma}</option>
+                                <option value={contenido.media.contenidos.origen.idioma} key={index}>{contenido.media.contenidos.origen.idioma}</option>
                             )
                         })}
                     </select>
                     <label>Categoría</label>
-                    <select className="select is-rounded">
+                    <select className="select is-rounded" onChange={(e)=> this.saveCategoria(e)}>
+                                <option disabled selected>Seleccione la categoría</option>
                         {programas.map((contenido,index) => {
                             return(
-                                <option value="" key={index}>{contenido.media.contenidos.categoria.principal}</option>
+                                <option value={contenido.media.contenidos.categoria.principal} key={index}>{contenido.media.contenidos.categoria.principal}</option>
                             )
                         })}
                     </select>
                     <label>Subcategoría</label>
-                    <select className="select is-rounded">
+                    <select className="select is-rounded" onChange={(e)=> this.saveSubcategoria(e)}>
+                                <option disabled selected>Seleccione la subcategoría</option>
                         {programas.map((contenido,index) => {
                             return(
-                                <option value="" key={index}>{contenido.media.contenidos.categoria.secundaria}</option>
+                                <option value={contenido.media.contenidos.categoria.secundaria} key={index}>{contenido.media.contenidos.categoria.secundaria}</option>
                             )
                         })}
                     </select>
                     </section>
                     <footer className="modal-card-foot">
-                    <button className="button is-success" submit="">Save changes</button>  {/* Metodo GET*/} 
+                    <Link to="/results">
+                    <button onClick={this.submit} className="button is-success">Save changes</button>  {/* Metodo GET*/} 
+                    </Link>
                     <button className="button" onClick={this.deleteModal}>Cancel</button>
                     </footer>
                 </div>

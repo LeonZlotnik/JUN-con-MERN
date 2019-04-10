@@ -8,7 +8,6 @@
 
                 "nombre": {
                     "programa": "100Mexicanos",
-                    "holding": "Televisa",
                     "descripcion": "Lorem ersntoe dh fpenf wed kfrefk ndje mdhr em una mek"
                     },
                     
@@ -47,8 +46,351 @@
 
             }
         }
+    },
+    {
+        "media" : {
+            "holding" : "TNT",
+            "hologo" : "",
+            "banner":"",
+            "contenidos" : {
+
+                "nombre": {
+                    "programa": "Señorita Polvora",
+                    "descripcion": "Lorem ersntoe dh fpenf wed kfrefk ndje mdhr em una mek"
+                    },
+                    
+                    "origen": { 
+                        "pais": "Mexico",
+                        "idioma": "Español"
+        
+                    },
+        
+                    "categoria": { 
+                        "principal": "Serie",
+                        "secundaria": "Accion",
+                        "terciario": "",
+                        "genero": {
+                            "clasificacion": "adulto",
+                            "edad-minima": "18"
+                        }
+        
+                    },
+        
+                    "programacion": { 
+                        "duracion-n-minutos": "45",
+                        "publicacion": "semanal"
+        
+                    },
+        
+                    "logo": { 
+                        "principal": "",
+                        "adicionales": {
+                            "miniatura": "",
+                            "secunaria": "",
+                            "secundaria-min": ""
+                        }
+        
+                    }
+
+            }
+        }
+    },
+       
+    {
+        "media" : {
+            "holding" : "Televisa",
+            "hologo" : "",
+            "banner":"",
+            "contenidos" : {
+
+                "nombre": {
+                    "programa": "Familia Peluche",
+                    "descripcion": "Lorem ersntoe dh fpenf wed kfrefk ndje mdhr em una mek"
+                    },
+                    
+                    "origen": { 
+                        "pais": "Mexico",
+                        "idioma": "Español"
+        
+                    },
+        
+                    "categoria": { 
+                        "principal": "Serie",
+                        "secundaria": "Comedia",
+                        "terciario": "",
+                        "genero": {
+                            "clasificacion": "familiar",
+                            "edad-minima": "8"
+                        }
+        
+                    },
+        
+                    "programacion": { 
+                        "duracion-n-minutos": "45",
+                        "publicacion": "semanal"
+        
+                    },
+        
+                    "logo": { 
+                        "principal": "",
+                        "adicionales": {
+                            "miniatura": "",
+                            "secunaria": "",
+                            "secundaria-min": ""
+                        }
+        
+                    }
+
+            }
+        }
+    },
+       
+    {
+        "media" : {
+            "holding" : "ABC",
+            "hologo" : "",
+            "banner":"",
+            "contenidos" : {
+
+                "nombre": {
+                    "programa": "Full House",
+                    "descripcion": "Lorem ersntoe dh fpenf wed kfrefk ndje mdhr em una mek"
+                    },
+                    
+                    "origen": { 
+                        "pais": "USA",
+                        "idioma": "Ingles"
+        
+                    },
+        
+                    "categoria": { 
+                        "principal": "Serie",
+                        "secundaria": "Comedia",
+                        "terciario": "",
+                        "genero": {
+                            "clasificacion": "familiar",
+                            "edad-minima": "8"
+                        }
+        
+                    },
+        
+                    "programacion": { 
+                        "duracion-n-minutos": "45",
+                        "publicacion": "semanal"
+        
+                    },
+        
+                    "logo": { 
+                        "principal": "",
+                        "adicionales": {
+                            "miniatura": "",
+                            "secunaria": "",
+                            "secundaria-min": ""
+                        }
+        
+                    }
+
+            }
+        }
+    },
+        
+    {
+        "media" : {
+            "holding" : "CBS",
+            "hologo" : "",
+            "banner":"",
+            "contenidos" : {
+
+                "nombre": {
+                    "programa": "Friends",
+                    "descripcion": "Lorem ersntoe dh fpenf wed kfrefk ndje mdhr em una mek"
+                    },
+                    
+                    "origen": { 
+                        "pais": "USA",
+                        "idioma": "Ingles"
+        
+                    },
+        
+                    "categoria": { 
+                        "principal": "Serie",
+                        "secundaria": "Comedia",
+                        "terciario": "",
+                        "genero": {
+                            "clasificacion": "familiar",
+                            "edad-minima": "8"
+                        }
+        
+                    },
+        
+                    "programacion": { 
+                        "duracion-n-minutos": "45",
+                        "publicacion": "semanal"
+        
+                    },
+        
+                    "logo": { 
+                        "principal": "",
+                        "adicionales": {
+                            "miniatura": "",
+                            "secunaria": "",
+                            "secundaria-min": ""
+                        }
+        
+                    }
+
+            }
+        }
+    },
+        
+    {
+        "media" : {
+            "holding" : "BBC",
+            "hologo" : "",
+            "banner":"",
+            "contenidos" : {
+
+                "nombre": {
+                    "programa": "DR Who",
+                    "descripcion": "Lorem ersntoe dh fpenf wed kfrefk ndje mdhr em una mek"
+                    },
+                    
+                    "origen": { 
+                        "pais": "Inglaterra",
+                        "idioma": "Ingles"
+        
+                    },
+        
+                    "categoria": { 
+                        "principal": "Serie",
+                        "secundaria": "Suspenso",
+                        "terciario": "",
+                        "genero": {
+                            "clasificacion": "familiar",
+                            "edad-minima": "10"
+                        }
+        
+                    },
+        
+                    "programacion": { 
+                        "duracion-n-minutos": "45",
+                        "publicacion": "semanal"
+        
+                    },
+        
+                    "logo": { 
+                        "principal": "",
+                        "adicionales": {
+                            "miniatura": "",
+                            "secunaria": "",
+                            "secundaria-min": ""
+                        }
+        
+                    }
+
+            }
+        }     
+    },
         
 
+    {
+        "media" : {
+            "holding" : "HBO",
+            "hologo" : "",
+            "banner":"",
+            "contenidos" : {
+
+                "nombre": {
+                    "programa": "Game Of Thrones",
+                    "descripcion": "Lorem ersntoe dh fpenf wed kfrefk ndje mdhr em una mek"
+                    },
+                    
+                    "origen": { 
+                        "pais": "Inglaterra",
+                        "idioma": "Ingles"
+        
+                    },
+        
+                    "categoria": { 
+                        "principal": "Serie",
+                        "secundaria": "Sienciaficcion",
+                        "terciario": "",
+                        "genero": {
+                            "clasificacion": "Adultos",
+                            "edad-minima": "18"
+                        }
+        
+                    },
+        
+                    "programacion": { 
+                        "duracion-n-minutos": "60",
+                        "publicacion": "semanal"
+        
+                    },
+        
+                    "logo": { 
+                        "principal": "",
+                        "adicionales": {
+                            "miniatura": "",
+                            "secunaria": "",
+                            "secundaria-min": ""
+                        }
+        
+                    }
+
+            }
         }
+
+    },   
+
+    {
+        "media" : {
+            "holding" : "Viajeros",
+            "hologo" : "",
+            "banner":"",
+            "contenidos" : {
+
+                "nombre": {
+                    "programa": "Alan por el mundo",
+                    "descripcion": "Lorem ersntoe dh fpenf wed kfrefk ndje mdhr em una mek"
+                    },
+                    
+                    "origen": { 
+                        "pais": "Mexico",
+                        "idioma": "Español"
+        
+                    },
+        
+                    "categoria": { 
+                        "principal": "Informativo",
+                        "secundaria": "Aventura",
+                        "terciario": "",
+                        "genero": {
+                            "clasificacion": "familiar",
+                            "edad-minima": "8"
+                        }
+        
+                    },
+        
+                    "programacion": { 
+                        "duracion-n-minutos": "25",
+                        "publicacion": "semanal"
+        
+                    },
+        
+                    "logo": { 
+                        "principal": "",
+                        "adicionales": {
+                            "miniatura": "",
+                            "secunaria": "",
+                            "secundaria-min": ""
+                        }
+        
+                    }
+
+            }
+        }
+
+    } 
         
     ]

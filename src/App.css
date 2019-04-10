@@ -114,6 +114,12 @@
   margin: 2% 1%;
 }
 
+.pbox {
+  margin: 3%;
+  background-color: black;
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

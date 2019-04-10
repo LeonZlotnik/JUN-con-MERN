@@ -18,7 +18,6 @@ class Tips extends Component {
     }
 
     render(){
-        console.log(this.props.children)
         return(
         <section id="Tips-section">
             <div className="card is-two-fifths">
