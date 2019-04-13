@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Bulma from 'bulma';
 import { Link } from 'react-router-dom';
 
