@@ -11,6 +11,9 @@ import Menu from './components/Menu';
 import Results from './components/Results';
 import Program from './components/Program';
 import ActionPage from './components/Display';
+import Dashboard from './components/Dashboard';
+import Create from './components/Create';
+import MyPrograms from './components/MyPrograms';
 
 import programas from './programas.json';
 
@@ -21,6 +24,11 @@ class App extends Component {
     renderResponse : ""
   }
 
+  getInfo = (e) =>{
+      e.preventDefault();
+      const user = e.target.elemnts.username.value;
+      axios.post(`http://localhost:5000`);
+  }
   // componentDidMount() {
   //   axios.get('http://localhost:3000/progam/api')
   //     .then(data => console.log(data))
@@ -67,10 +75,13 @@ class App extends Component {
           <Route exact path='/program' component={Program}/>
           <Route exact path='/action-page' component={ActionPage}/>
           <Route exact path='/dashboard' component={Dashboard}/>
+          <Route exact path='/dashboard/create' render={() => <Create getInfo={this.getInfo} />}/>
+          <Route exact path='/dashboard/my-programs' component={MyPrograms}/>
+
         </Switch>
 
-        <h2>Call out API</h2>
-        <p>{this.state.renderResponse.express}</p>
+        {/* <h2>Call out API</h2> */}
+        {/* <p>{this.state.renderResponse.express}</p> */}
 
       </div>
     );
