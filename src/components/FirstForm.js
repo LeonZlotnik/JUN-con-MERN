@@ -1,7 +1,25 @@
 import React from 'react';
 import Bulma from 'bulma';
+import { Link } from 'react-router-dom';
 
-function FirstForm(){
+class FirstForm extends Component{
+
+  state = {
+    user : "User",
+    producer : "Producer"
+
+  }
+
+  EventHandler = (e) =>{
+    this.setStata({
+       User : e.target.user.value,
+       Producer : e.target.producer.value
+    })
+    
+    }
+
+
+  render(){
     return (
 
         <form action className="container is-fluid" >    
@@ -12,8 +30,8 @@ function FirstForm(){
                 <td>
                   <select>      
                     <option value="--">--</option>
-                    <option value="User">User</option>
-                    <option value="Producer">Producer</option>
+                    <option value="User" onChange={(e)=> this.EventHandler(e)}>User</option>
+                    <option value="Producer" onChange={(e)=> this.EventHandler(e)}>Producer</option>
                   </select></td>
               </tr>
               <tr>
@@ -162,11 +180,14 @@ function FirstForm(){
                   </select>
                 </td>
               </tr>   
+                <Link to="results"></Link>
+                <Link to="dasboard"></Link>
             </tbody>
           </table>
         </form>
       );
     };
+  }
 
 
 export default FirstForm;
